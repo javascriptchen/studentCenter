@@ -1,0 +1,48 @@
+.orderTop {
+  .weui-cells__title {
+    color: #F4664B;
+  }
+}
+
+.cc-check {
+  height: 100%;
+  padding: 5px 15px;
+  position: relative;
+  border-bottom: 1px solid #e5e5e5;
+  .cc-check-top {
+    padding: 10px 0 10px 0;
+    font-weight: 400;
+    font-size: 16px;
+    width: auto;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    word-wrap: break-word;
+    word-break: break-all;
+  }
+  .cc-check-bottom {
+    color: #999;
+    font-size: 13px;
+    line-height: 1.2;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    display: -webkit-box;
+    padding: 0 0 10px 0;
+
+  }
+  &:after {
+    height: 10px;
+    width: 10px;
+    content: " ";
+    display: inline-block;
+    transform: rotate(45deg);
+    height: 6px;
+    width: 6px;
+    border-width: 2px 2px 0 0;
+    border-color: #c7c7cc;
+    border-style: solid;
+    position: absolute;
+    right: 15px;
+    top: 50%;
+    margin-top: -4px;
+  }
+}

@@ -1,0 +1,44 @@
+header {
+  background-color: #F4664B;
+  height: 180px;
+  background: url('../../static/images/bg_top.png');
+  background-size: 100% 100%;
+  img {
+    display: block;
+    width: 100px;
+    height: 100px;
+    margin: 0 auto;
+    padding-top: 40px;
+  }
+  p{
+    text-align: center;
+    margin-top: 5px;
+    color: #ffffff;
+    font-size: 18px;
+  }
+}
+
+main {
+  display: flex;
+  //text-align: center;
+  line-height:37.5pt;
+  div{
+    margin-top: 30px;
+    flex:1;
+    &.left{
+      border-right: 1px solid #E8E8E8;
+    }
+    .userImg{
+      transform: scale(0.6,0.6);
+      float: left;
+    }
+    .studyCenter {
+      color:#54423D;
+      float: left;
+    }
+    .myData {
+      color:#54423D;
+    }
+  }
+
+}

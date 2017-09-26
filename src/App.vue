@@ -5,43 +5,46 @@
 </template>
 
 <script>
+  export default {
+    name: 'app',
+//  data() {
+//    return {
+//      token: ''
+//    }
+//  },
+    watch:{
+      '$route'(to,from) {
+        if (to.path != from.path) {
+          this.$vux.alert.hide({
 
-export default {
-
-  name: 'app',
-  data() {
-    return {
-      isShowBack: true,
-    }
-  },
-  created() {
-    this.isShowOrHiddenBack(this.$route.path)
-  },
-  methods: {
-    isShowOrHiddenBack(path) {
-      if (path == '/home') {
-        this.isShowBack = false //隐藏返回按钮
-      } else {
-        this.isShowBack = true //显示隐藏按钮
+          })
+          this.$vux.loading.hide()
+        }
       }
-    },
-  },
-  watch: {
-    //监控路由的更改
-    '$route': function (newValue, oldVal) {
-      this.isShowOrHiddenBack(newValue.path)
-      console.log(newValue.path)
     }
   }
-}
 </script>
 
-<style >
+<style lang="less">
+  @import '~vux/src/styles/reset.less';
 
-body {
-  background-color: #fbf9fe;
-}
-#header {
-  background-color: #F4664B;
-}
+  body {
+    background-color: #F3F4F9;
+    height: 100%;
+    width: 100%;
+  }
+
+  html {
+    height: 100%;
+    width: 100%;
+
+  }
+
+  #app {
+    height: 100%;
+  }
+
+  ul, ol {
+    list-style: none;
+  }
 </style>
