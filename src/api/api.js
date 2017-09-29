@@ -119,3 +119,9 @@ export const lookPaper = params => {
 export const wxMockActJoin = params => {
   return axios.post(`${base}/api/wxMockActJoin`, transformRequest(params));
 };
+//获取验证码
+export const getMsgCode = params => {
+  return axios.get(`${base}/api/getPhoneCode`, {
+    params: params
+  });
+};

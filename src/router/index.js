@@ -10,7 +10,6 @@ const nowAward = () => import('../kedooWap/nowAward')
 const address = () => import('../kedooWap/address')
 const studentLogin = () => import('../studentCenter/studentLogin')
 const search = () => import('../studentCenter/search')
-const test = () => import('../studentCenter/test')
 const userCenter = () => import('../studentCenter/userCenter')
 const userInfo = () => import('../studentCenter/userInfo')
 const orderList = () => import('../studentCenter/orderList')
@@ -36,6 +35,7 @@ import fast from '../kedooWap/paperAnswer/fast'
 import register from '../h5/register/register'
 import getSuccess from '../h5/getSuccess/getSuccess'
 import nowStart from '../h5/nowStart/nowStart'
+import explain from '../h5/explain/explain'
 // const register = () => import('../h5/register/register')
 
 import advertise from '../kedooWap/advertise'
@@ -59,7 +59,6 @@ const routes = [
   {path: '/paperAnswer/fast',component: fast},
   {path: '/studentLogin', component: studentLogin},
   {path: '/search', component: search},
-  {path: '/test', component: test},
   {path: '/userCenter', component: userCenter},
   {path: '/orderList', component: orderList},
   {path: '/userInfo', component: userInfo},
@@ -74,6 +73,7 @@ const routes = [
   {path: '/register', component: register},
   {path: '/getSuccess', component: getSuccess},
   {path: '/nowStart', component: nowStart},
+  {path: '/explain', component: explain},
   {path: '*', component: notFund},
 ]
 export default routes;

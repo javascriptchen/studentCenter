@@ -1,25 +1,26 @@
 <template>
-  <div class='getSuccess'>
-     <div style='display: none;' v-title>领取成功</div>
-    <img class="getSuccess" src="./getSuccess01.jpg" alt="">
-    <img class="getSuccess" src="./getSuccess02.jpg" alt="">
-    <img class="getSuccess" src="./10.1_03.jpg" alt="" v-if="img1">
-    <img class="getSuccess" src="./10.8_03.jpg" alt="" v-if="img2">
-    <img class="getSuccess" src="./10.15_03.jpg" alt="" v-if="img3">
-    <img class="getSuccess" src="./getSuccess04.jpg" alt="">
+  <div class='explain'>
+     <div style='display: none;' v-title>活动详情</div>
+    <img src="./01explain_01.png" class="explainImg" v-if="img1">
+    <img src="./08explain_01.png" class="explainImg" v-if="img2">
+    <img src="./15explain_01.png" class="explainImg" v-if="img3">
+    <img src="./explain_02.png" class="explainImg">
+    <img src="./explain_03.png" class="explainImg">
+    <img src="./explain_04.png" class="explainImg">
+    <img src="./explain_05.png" class="explainImg">
   </div>
 </template>
 <script>
 export default {
 
-  data() {
+  data () {
     return {
       img1: false,
       img2: false,
       img3: false
     };
   },
-  created() {
+  created () {
     let myDate = new Date();
     let mytime = myDate.toLocaleString();
     console.log(Math.round(new Date().getTime() / 1000));
@@ -39,6 +40,6 @@ export default {
   }
 }
 </script>
-<style lang='less'>
-@import './getSuccess.less';
+<style lang='less' >
+@import './explain';
 </style>

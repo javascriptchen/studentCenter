@@ -36,7 +36,7 @@
 
 <script>
 import headTitle from '../component/title.vue'
-import { Upload,Dialog } from 'element-ui'
+// import { Upload,Dialog } from 'element-ui'
 
 
 export default {
@@ -58,8 +58,8 @@ export default {
   },
   components: {
     headTitle,
-    elUpload:Upload,
-    elDialog:Dialog
+    // elUpload:Upload,
+    // elDialog:Dialog
   },
 }
 </script>

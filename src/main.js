@@ -24,7 +24,7 @@ import {
   ConfirmPlugin
 } from 'vux'
 // import { Upload,Dialog } from 'element-ui'
-import 'element-ui/lib/theme-default/index.css'
+// import 'element-ui/lib/theme-default/index.css'
 // Vue.use(Upload)
 // Vue.use(Dialog)
 import Mock from './mock'
@@ -102,7 +102,11 @@ router.beforeEach((to, from, next) => {
     next({
       path: '/getSuccess'
     })
-
+  }
+   else if (to.path == '/explain') {
+    next({
+      path: '/explain'
+    })
   }
   else if (to.path == '/register') {
     //可获取到url？后面的参数
